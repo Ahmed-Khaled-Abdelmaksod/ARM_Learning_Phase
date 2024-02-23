@@ -97,7 +97,17 @@ void RCC_voidEnablePeripheralClock(u8 copy_u8PeripheralBus,u8 copy_u8Peripheral)
  */
 void RCC_voidDisablePeripheralClock(u8 copy_u8PeripheralBus,u8 copy_u8Peripheral);
 
-
+/*
+ * Function: RCC_voidInitSystemClock
+ * Description: Initializes the system clock configuration.
+ * Parameters: None
+ * Returns: None
+ * Note: This function configures the microcontroller's system clock settings.
+ *       Specific configurations may include setting the source, frequency, and dividers for the system clock.
+ *       Ensure that the required configurations are properly set based on the microcontroller's datasheet and reference manual.
+ * Example:
+ *    RCC_voidInitSystemClock(); // Initializes the system clock with default or predefined settings.
+ */
 void RCC_voidInitSystemClock(void);
 
 

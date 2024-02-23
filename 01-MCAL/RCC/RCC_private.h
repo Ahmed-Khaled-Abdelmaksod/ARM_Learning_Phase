@@ -8,9 +8,8 @@
 
 /**************** INCLUDE SECTION *************************/
 
-//#include"../../LIB/STD_TYPES.h"
+#include"../../LIB/STD_TYPES.h"
 
-#include"../../../../IMT/workspace/ARM_Learning_Phase/04-LIB/STD_TYPES.h"
 
 /*                BASE ADDRESS OF RCC PERIPHERAL           */
 #define RCC_BASE_ADDRESS 0x40021000
