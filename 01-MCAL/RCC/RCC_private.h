@@ -10,6 +10,8 @@
 
 #include"../../LIB/STD_TYPES.h"
 
+//#include"../../../../IMT/workspace/ARM_Learning_Phase/04-LIB/STD_TYPES.h"
+
 /*                BASE ADDRESS OF RCC PERIPHERAL           */
 #define RCC_BASE_ADDRESS 0x40021000
 
@@ -44,7 +46,7 @@
 #define RCC_AHB_SDIO    10
 
 /*          APB1 PERIFERALS           */
-/* this macroes will be useful in  RCC_voidEnablePeripheralClock and RCC_voidDisablePeripheralClock function */ 
+/* this Macros will be useful in  RCC_voidEnablePeripheralClock and RCC_voidDisablePeripheralClock function */ 
 #define RCC_APB1_TIM2         0
 #define RCC_APB1_TIM3         1  
 #define RCC_APB1_TIM4         2  

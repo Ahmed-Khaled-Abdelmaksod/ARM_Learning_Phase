@@ -7,43 +7,38 @@
 /******************** Include Section *********************/
 #include"../../LIB/BIT_MATH.h"
 #include"../../LIB/STD_TYPES.h"
+//#include"../../../../IMT/workspace/ARM_Learning_Phase/04-LIB/BIT_MATH.h"
+//#include"../../../../IMT/workspace/ARM_Learning_Phase/04-LIB/STD_TYPES.h"
+
 #include "RCC_interface.h"
 #include "RCC_config.h"
 void RCC_voidEnablePeripheralClock(u8 copy_u8PeripheralBus,u8 copy_u8Peripheral)
 {
-	if(copy_u8PeripheralBus > 2)
+
+
+	switch(copy_u8PeripheralBus) /* Check which bus the user need */
 	{
-		#error("Wrong choice for the bus ");
+		case RCC_AHB_BUS:
+			/* Enable the clock on the specified peripheral */
+
+			SET_BIT(RCC_AHBENR,copy_u8Peripheral);
+			break;
+		case RCC_APB1_BUS:
+			/* Enable the clock on the specified peripheral */
+
+			SET_BIT(RCC_APB1ENR,copy_u8Peripheral);
+			break;
+		case RCC_APB2_BUS:
+			/* Enable the clock on the specified peripheral */
+
+			SET_BIT(RCC_APB2ENR,copy_u8Peripheral);
+			break;
 	}
-	else
-	{
-		switch(copy_u8PeripheralBus) /* Check which bus the user need */
-		{
-			case RCC_AHB_BUS:
-				/* Enable the clock on the specified peripheral */
-				
-				SET_BIT(RCC_AHBENR,copy_u8Peripheral); 
-				break;
-			case RCC_APB1_BUS:
-				/* Enable the clock on the specified peripheral */
-				
-				SET_BIT(RCC_APB1ENR,copy_u8Peripheral); 
-				break;
-			case RCC_APB2_BUS:
-				/* Enable the clock on the specified peripheral */
-				
-				SET_BIT(RCC_APB2ENR,copy_u8Peripheral);
-				break;
-		}
-	}
+
 }
-void RCC_voidDisablePeripheralClock(u8 copy_u8PeripheralBus,u8 copy_u16Peripheral)
+void RCC_voidDisablePeripheralClock(u8 copy_u8PeripheralBus,u8 copy_u8Peripheral)
 {
-	if(copy_u8PeripheralBus > 2)
-	{
-		#error("Wrong choice for the bus ");
-	}
-	else
+	if(copy_u8PeripheralBus < 2)
 	{
 		switch(copy_u8PeripheralBus) /* Check which bus the user need */
 		{
@@ -63,7 +58,9 @@ void RCC_voidDisablePeripheralClock(u8 copy_u8PeripheralBus,u8 copy_u16Periphera
 				CLR_BIT(RCC_APB2ENR,copy_u8Peripheral);
 				break;
 		}
+
 	}
+
 }
 
 
@@ -80,7 +77,7 @@ void RCC_voidInitSystemClock(void)
 		while(!GET_BIT(RCC_CR,1));
 		
 		
-		
+
 	#elif RCC_CLK_SRC == RCC_CLK_SRC_HSE
 	
 	
@@ -118,8 +115,10 @@ void RCC_voidInitSystemClock(void)
 			CLR_BIT(RCC_CFGR,17);
 		#elif RCC_HSE_PLL_ENTRY == RCC_HSE_PLL_ENTRY_DIV_2
 			SET_BIT(RCC_CFGR,17);
+		#endif
 		SET_BIT(RCC_CR,24);
 		
+
 	#endif
 	
 	#if RCC_CLOCK_SECUIRTY_SYSTEM== RCC_ENABLE_Clock_SECUIRTY_SYSTEM
