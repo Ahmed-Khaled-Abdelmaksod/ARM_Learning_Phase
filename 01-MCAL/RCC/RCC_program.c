@@ -7,8 +7,6 @@
 /******************** Include Section *********************/
 #include"../../LIB/BIT_MATH.h"
 #include"../../LIB/STD_TYPES.h"
-//#include"../../../../IMT/workspace/ARM_Learning_Phase/04-LIB/BIT_MATH.h"
-//#include"../../../../IMT/workspace/ARM_Learning_Phase/04-LIB/STD_TYPES.h"
 
 #include "RCC_interface.h"
 #include "RCC_config.h"
