@@ -64,4 +64,7 @@
  *    int bitValue = GET_BIT(myRegister, 3); // Retrieves the value of the 4th bit in myRegister.
  */
 #define GET_BIT(REG, BIT) 		((REG >> BIT) & 0b1)
+
+
+
 #endif

@@ -1,7 +1,7 @@
 /*************************************************/
 /* @Author  : Ahmed Khaled Abdelmaksod Ebrahim   */
-/* @Date    : 20 FEB 2024					               */
-/* @version : V01 								               */
+/* @Date    : 20 FEB 2024					     */
+/* @version : V01 								 */
 /*************************************************/
 
 #ifndef STD_TYPES_H
