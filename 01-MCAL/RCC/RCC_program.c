@@ -65,3 +65,8 @@ void RCC_voidDisablePeripheralClock(u8 copy_u8PeripheralBus,u8 copy_u16Periphera
 		}
 	}
 }
+
+void RCC_voidInitSystemClock(void)
+{
+	
+}
