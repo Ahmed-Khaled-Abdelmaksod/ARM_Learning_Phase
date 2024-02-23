@@ -13,8 +13,64 @@
 
 
 /********************* sw functions sections ****************/
-
-
+/****
+	this Doc will be helpful on RCC_voidEnablePeripheralClock and RCC_voidDisablePeripheralClock
+	#if you choose RCC_AHB_BUS for copy_u8PeripheralBus
+		this is values are avaliable for copy_u8Peripheral
+		- RCC_AHB_DMA1    
+		- RCC_AHB_DMA2	
+		- RCC_AHB_SRAM    
+		- RCC_AHB_FLITF   
+		- RCC_AHB_CRC     
+		- RCC_AHB_FSMC    
+		- RCC_AHB_SDIO
+	#if you choose RCC_APB1_BUS for copy_u8PeripheralBus
+		this is values are avaliable for copy_u8Peripheral	
+		- RCC_APB1_TIM2         
+		- RCC_APB1_TIM3          
+		- RCC_APB1_TIM4          
+		- RCC_APB1_TIM5        
+		- RCC_APB1_TIM6  	     
+		- RCC_APB1_TIM7        
+		- RCC_APB1_TIM12       
+		- RCC_APB1_TIM13       
+		- RCC_APB1_TIM14      					 
+		- RCC_APB1_WWDG        
+		- RCC_APB1_SPI2        
+		- RCC_APB1_SPI3         
+		- RCC_APB1_USART2         
+		- RCC_APB1_USART3         
+		- RCC_APB1_USART4        
+		- RCC_APB1_USART5         
+		- RCC_APB1_I2C1		   
+		- RCC_APB1_I2C2  		  
+		- RCC_APB1_USB  		  
+		- RCC_APB1_CAN          
+		- RCC_APB1_BKP            
+		- RCC_APB1_PWR            
+		- RCC_APB1_DAC           
+	#if you choose RCC_APB2_BUS for copy_u8PeripheralBus
+		this is values are avaliable for copy_u8Peripheral
+		
+		- RCC_APB2_AFIO        
+		- RCC_APB2_IOPA        
+		- RCC_APB2_IOPB			
+		- RCC_APB2_IOPC			
+		- RCC_APB2_IOPD			
+		- RCC_APB2_IOPE			
+		- RCC_APB2_IOPF        
+		- RCC_APB2_IOPG			
+		- RCC_APB2_ADC1			
+		- RCC_APB2_ADC2			
+		- RCC_APB2_TIM1			
+		- RCC_APB2_SPI1			
+		- RCC_APB2_TIM8			
+		- RCC_APB2_USART1		
+		- RCC_APB2_ADC3			
+		- RCC_APB2_TIM9			
+		- RCC_APB2_TIM10		
+		- RCC_APB2_TIM11		
+*/
 /*
  * Function: RCC_voidEnablePeripheralClock
  * Description: Enables the clock for a specific peripheral.

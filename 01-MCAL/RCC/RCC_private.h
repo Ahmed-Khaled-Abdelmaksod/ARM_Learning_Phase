@@ -91,4 +91,17 @@
 #define RCC_APB2_TIM10			20
 #define RCC_APB2_TIM11			21
 
+
+/* System clock source   */
+
+#define RCC_CLK_SRC_HSI     0
+#define RCC_CLK_SRC_HSE     1
+#define RCC_CLK_SRC_PLL     2
+
+/* Clock security system  */
+
+#define RCC_ENABLE_Clock_SECUIRTY_SYSTEM        1
+#define RCC_DISABLE_Clock_SECUIRTY_SYSTEM 		0
+
+
 #endif
