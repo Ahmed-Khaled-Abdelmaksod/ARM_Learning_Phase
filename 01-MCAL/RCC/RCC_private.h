@@ -103,5 +103,29 @@
 #define RCC_ENABLE_Clock_SECUIRTY_SYSTEM        1
 #define RCC_DISABLE_Clock_SECUIRTY_SYSTEM 		0
 
+/* PLL entry clock source */
+#define RCC_PLL_ENRTY_SRC_HSI_DIV_2 		0
+#define RCC_PLL_ENRTY_SRC_HSE 				1
 
+/* PLL MUL VALUES */
+#define RCC_PLL_MUL_2 	0b0000
+#define RCC_PLL_MUL_3 	0b0001
+#define RCC_PLL_MUL_4 	0b0010
+#define RCC_PLL_MUL_5 	0b0011
+#define RCC_PLL_MUL_6 	0b0100
+#define RCC_PLL_MUL_7 	0b0101
+#define RCC_PLL_MUL_8 	0b0110
+#define RCC_PLL_MUL_9 	0b0111
+#define RCC_PLL_MUL_10	0b1000
+#define RCC_PLL_MUL_11	0b1001
+#define RCC_PLL_MUL_12	0b1010
+#define RCC_PLL_MUL_13	0b1011
+#define RCC_PLL_MUL_14	0b1100
+#define RCC_PLL_MUL_15	0b1101
+#define RCC_PLL_MUL_16	0b1110
+
+
+/* Macros of PLL if the HSE is input */
+#define RCC_HSE_PLL_ENTRY_DIV_2 		0
+#define RCC_HSE_PLL_ENTRY_DIV_1 		1
 #endif
