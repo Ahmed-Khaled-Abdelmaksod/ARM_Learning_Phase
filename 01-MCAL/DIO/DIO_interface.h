@@ -10,6 +10,34 @@
 
 #include "DIO_private.h"
 
+/*************** READ THIS DOCs before using the interfaces ****************/
+/**
+ * Pins Value must be one of this values :
+    - DIO_PIN0
+    - DIO_PIN1
+    - DIO_PIN2
+    - DIO_PIN3
+    - DIO_PIN4
+    - DIO_PIN5
+    - DIO_PIN6
+    - DIO_PIN7
+    - DIO_PIN8
+    - DIO_PIN9
+    - DIO_PIN10
+    - DIO_PIN11
+    - DIO_PIN12
+    - DIO_PIN13
+    - DIO_PIN14
+    - DIO_PIN15
+ * Port Value must be one of this values :
+    - DIO_PORTA
+    - DIO_PORTB
+    - DIO_PORTC
+ * Logic Values must be one of this values :
+    - DIO_HIGH
+    - DIO_LOW
+*/
+
 /**
  * @brief Set the direction of a specific pin on a microcontroller GPIO port.
  *
