@@ -5,8 +5,8 @@
 /*************************************************/
 /*V02 will contain prescaler config for all Buses (AHB - APB1 - APB2) */
 /******************** Include Section *********************/
-#include"../../LIB/BIT_MATH.h"
-#include"../../LIB/STD_TYPES.h"
+#include"../../04-LIB/BIT_MATH.h"
+#include"../../04-LIB/STD_TYPES.h"
 
 #include "RCC_interface.h"
 #include "RCC_config.h"
